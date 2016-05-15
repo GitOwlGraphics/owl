@@ -16,9 +16,9 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
 			<ul>
-				<li>owlGraphics<li>
-				<li>2016<li>
 				<li>Mentions légales<li>
+				<li><a href="<?php bloginfo('home');?>"><img src="<?php bloginfo('template_url');?>/img/owl.png"></a><li>
+				<li>® owlGraphics - 206<li>
 			</ul>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
