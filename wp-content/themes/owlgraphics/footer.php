@@ -19,7 +19,6 @@
 				<li>owlGraphics<li>
 				<li>2016<li>
 				<li>Mentions légales<li>
-				<li>Mentions très bien<li>
 			</ul>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
