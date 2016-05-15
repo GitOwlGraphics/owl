@@ -18,7 +18,7 @@
 			<ul>
 				<li>Mentions légales<li>
 				<li><a href="<?php bloginfo('home');?>"><img src="<?php bloginfo('template_url');?>/img/owl.png"></a><li>
-				<li>® owlGraphics - 206<li>
+				<li>® owlGraphics - 2016<li>
 			</ul>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
