@@ -60,6 +60,26 @@ get_header(); ?>
             </section>
             <section id="projets">
                 <div class="container">
+                    <div id="membres">
+                        <?php the_field('titre_membres'); ?>
+                        <ul>
+                            <?php
+                            if (have_rows('membres')):
+                                while (have_rows('membres')) : the_row();
+                                    ?>
+                                    <li>
+                                    <img src="<?php the_sub_field('illustration_membre'); ?>">
+                                    <h4><?php the_sub_field('nom_prenom_membre'); ?></h4>
+                                    <?php the_sub_field('contenu_membre'); ?>
+                                    <?php
+                                endwhile;
+                                ?>
+                                </li>
+                                <?php
+                            endif;
+                            ?>
+                        </ul>
+                    </div>
                 </div>
             </section>
             <section id="contact">

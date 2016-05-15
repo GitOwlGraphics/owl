@@ -193,7 +193,7 @@ section#agence .container #membres h1 {
 }
 section#agence .container #membres h2 {
     text-transform: none;
-    font-style: italic;
+    text-transform: uppercase;
     padding:5px 0;
 }
 
