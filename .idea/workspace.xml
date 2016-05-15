@@ -131,7 +131,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1463323311707</updated>
-      <workItem from="1463323313243" duration="566000" />
+      <workItem from="1463323313243" duration="920000" />
     </task>
     <task id="LOCAL-00001" summary="Premier commit">
       <created>1463323877216</created>
@@ -144,7 +144,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="566000" />
+    <option name="totallyTimeSpent" value="920000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="0" width="1932" height="1056" extended-state="0" />
