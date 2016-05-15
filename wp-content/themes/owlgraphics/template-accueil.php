@@ -2,37 +2,76 @@
 /* Template Name: Accueil */
 get_header(); ?>
 <div id="content" class="pageContent">
-	<section id="overAll">
-		<div class="container">
-			<?php
-			// TO SHOW THE PAGE CONTENTS
-			while ( have_posts() ) : the_post(); ?> <!--Because the_content() works only inside a WP Loop -->
-			<div class="entry-content-page">
-				<section id="accueil">
-					<div class="container">
-						<?php the_content(); ?> <!-- Page Content -->
-					</div>
-				</section>
-				<section id="concept">
-					<div class="container">
-					</div>
-				</section>
-				<section id="projets">
-					<div class="container">
-					</div>
-				</section>
-				<section id="contact">
-					<div class="container">
-					</div>
-				</section>
-			</div><!-- .entry-content-page -->
+    <?php
+    // TO SHOW THE PAGE CONTENTS
+    while (have_posts()) : the_post(); ?> <!--Because the_content() works only inside a WP Loop -->
+        <div class="entry-content-page">
+            <section id="accueil">
+                <div class="container">
+                    <div id="concept">
+                        <?php the_content(); ?> <!-- Page Content -->
+                        <ul>
+                            <?php
+                            if (have_rows('savoir_faire')):
+                                while (have_rows('savoir_faire')) : the_row();
+                                    ?>
+                                    <li>
+                                    <img src="<?php the_sub_field('illustration_savoir_faire'); ?>">
+                                    <h4><?php the_sub_field('titre_savoir_faire'); ?></h4>
+                                    <?php the_sub_field('texte_savoir_faire'); ?>
+                                    <?php
+                                endwhile;
+                                ?>
+                                </li>
+                                <?php
+                            endif;
+                            ?>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="agence">
+                <div class="container">
+                    <div id="membres">
+                        <?php the_field('titre_membres'); ?>
+                        <ul>
+                            <?php
+                            if (have_rows('membres')):
+                                while (have_rows('membres')) : the_row();
+                                    ?>
+                                    <li>
+                                    <img src="<?php the_sub_field('illustration_membre'); ?>">
+                                    <h4><?php the_sub_field('nom_prenom_membre'); ?></h4>
+                                    <?php the_sub_field('contenu_membre'); ?>
+                                    <?php
+                                endwhile;
+                                ?>
+                                </li>
+                                <?php
+                            endif;
+                            ?>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="concept">
+                <div class="container">
+                </div>
+            </section>
+            <section id="projets">
+                <div class="container">
+                </div>
+            </section>
+            <section id="contact">
+                <div class="container">
+                </div>
+            </section>
+        </div><!-- .entry-content-page -->
 
-			<?php
-		endwhile; //resetting the page loop
-		wp_reset_query(); //resetting the page query
-		?>
-	</div>
-</section>
+        <?php
+    endwhile; //resetting the page loop
+    wp_reset_query(); //resetting the page query
+    ?>
 </div>
 
 <?php

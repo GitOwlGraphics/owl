@@ -11,111 +11,206 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
+
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
+
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
+
 /******************************************************************************/
 /****************************** GENERAL *************************************/
 /******************************************************************************/
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic);
 
-html,body, p {
-	font-family: 'Roboto', sans-serif;
-	margin: 0;
-	padding: 0;
-	font-size: 14px;
-	color: #fff;
+html, body, p {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #fff;
 }
+
 h1 {
-	font-size: 36px;
+    font-size: 36px;
 }
+
 h2 {
-	font-size: 30px;
+    font-size: 30px;
 }
+
 h3 {
-	font-size: 24px;
+    font-size: 24px;
 }
+
 h4 {
-	font-size: 20px;
+    font-size: 20px;
 }
+
 h5 {
-	font-size: 18px;
+    font-size: 18px;
 }
+
 a {
-	text-decoration: none;
-	color: #fff;
+    text-decoration: none;
+    color: #fff;
 }
+
 ul li {
-	list-style: none;
+    list-style: none;
 }
+
 .container {
-	max-width: 1170px;
-	margin: 0 auto;
-	position: relative;
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
 }
+
 /******************************************************************************/
 /****************************** HEADER **************************************/
 /******************************************************************************/
-header{
-	padding-top: 20px;
-	background: url('img/fondHeader.png');
-	background-size: 100%;
-	background-repeat: no-repeat;
-	height: 1071px;
+header {
+    background: url('img/fondHeader.png');
+    height: 1070px;
 }
+
 #logoOwl {
-	float: left;
+    float: left;
 }
+
 #site-navigation .menu-menu-principal-container {
-	float: right;
+    float: right;
 }
+
 #site-navigation .menu-menu-principal-container ul {
-		padding-top: 32px;
+    padding-top: 32px;
 }
+
 #site-navigation .menu-menu-principal-container ul li {
-	padding: 0 20px;
-	display: inline;
+    padding: 0 20px;
+    display: inline;
 }
+
 #site-navigation .menu-menu-principal-container ul li a {
-	text-transform: uppercase;
-	font-size: 16px;
-	font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
 }
+
 #entete {
-	position: absolute;
-	top:350px;
-	width: 350px;
-	left: 0;
-	right:0;
-	margin: 0 auto;
+    position: absolute;
+    top: 350px;
+    width: 350px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
+
 #entete h1 {
-	font-size: 64px;
+    font-size: 64px;
+}
+
+/******************************************************************************/
+/******************************* HOME ***************************************/
+/******************************************************************************/
+section#accueil {
+    background: url('img/fondAccueil.png');
+    background-repeat: no-repeat;
+}
+
+section#accueil .container {
+    text-align: center;
+    padding-top: 450px;
+}
+
+section#accueil .container h1, section#accueil .container h2 {
+    text-transform: uppercase;
+    color: #3c3839;
+}
+
+section#accueil .container #concept ul {
+    padding-top: 100px;
+}
+
+section#accueil .container #concept ul li {
+    border: solid 2px #282828;
+    display: inline-block;
+    width: 30%;
+    margin: 0 15px;
+    padding: 75px 0;
+    color: #3c3839;
+}
+
+section#accueil .container #concept ul li h4 {
+    padding: 45px 0;
+    text-transform: uppercase;
+}
+
+section#accueil .container #concept ul li p {
+    font-size: 16px;
+    color: #3c3839;
+}
+section#agence {
+    background: #282828;
+    text-align: center;
+}
+section#agence .container #membres {
+    padding: 50px 0;
+    margin-top: 100px;
+}
+section#agence .container #membres h1 {
+    text-transform: uppercase;
+}
+section#agence .container #membres h2 {
+    text-transform: none;
+    font-style: italic;
+    padding:5px 0;
+}
+
+section#agence .container #membres ul {
+    padding-top: 45px;
+}
+
+section#agence .container #membres ul li {
+    display: inline-block;
+    padding: 0 5px;
+    color: #fff;
+}
+section#agence .container #membres ul li h4 {
+    text-transform: uppercase;
+    padding: 20px  0;
+}
+section#agence .container #membres ul li p {
+    color: #fff;
+    line-height: 25px;
 }
