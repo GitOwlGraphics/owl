@@ -180,21 +180,25 @@ section#accueil .container #concept ul li p {
     font-size: 16px;
     color: #3c3839;
 }
+
 section#agence {
     background: #282828;
     text-align: center;
 }
+
 section#agence .container #membres {
     padding: 50px 0;
     margin-top: 100px;
 }
+
 section#agence .container #membres h1 {
     text-transform: uppercase;
 }
+
 section#agence .container #membres h2 {
     text-transform: none;
     text-transform: uppercase;
-    padding:5px 0;
+    padding: 5px 0;
 }
 
 section#agence .container #membres ul {
@@ -206,14 +210,17 @@ section#agence .container #membres ul li {
     padding: 0 5px;
     color: #fff;
 }
+
 section#agence .container #membres ul li h4 {
     text-transform: uppercase;
-    padding: 20px  0;
+    padding: 20px 0;
 }
+
 section#agence .container #membres ul li p {
     color: #fff;
     line-height: 25px;
 }
+
 section#agence {
 
 }
