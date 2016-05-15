@@ -28,6 +28,9 @@
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		</nav><!-- #site-navigation -->
+			<div id="entete">
+				<h1>owlGraphics</h1>
+			</div>
 		</div>
 	</header><!-- #masthead -->
 	<div id="content" class="site-content">

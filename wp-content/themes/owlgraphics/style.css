@@ -52,7 +52,6 @@ html,body, p {
 	padding: 0;
 	font-size: 14px;
 	color: #fff;
-	display: none;
 }
 h1 {
 	font-size: 36px;
@@ -79,6 +78,7 @@ ul li {
 .container {
 	max-width: 1170px;
 	margin: 0 auto;
+	position: relative;
 }
 /******************************************************************************/
 /****************************** HEADER ****************************************/
@@ -107,4 +107,15 @@ header{
 	text-transform: uppercase;
 	font-size: 16px;
 	font-weight: bold;
+}
+#entete {
+	position: absolute;
+	top:350px;
+	width: 350px;
+	left: 0;
+	right:0;
+	margin: 0 auto;
+}
+#entete h1 {
+	font-size: 64px;
 }
