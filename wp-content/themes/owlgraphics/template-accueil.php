@@ -60,17 +60,17 @@ get_header(); ?>
             </section>
             <section id="projets">
                 <div class="container">
-                    <div id="membres">
-                        <?php the_field('titre_membres'); ?>
+                    <div id="nos_projets">
+                        <?php the_field('titre_projets'); ?>
                         <ul>
                             <?php
-                            if (have_rows('membres')):
-                                while (have_rows('membres')) : the_row();
+                            if (have_rows('projets')):
+                                while (have_rows('projets')) : the_row();
                                     ?>
                                     <li>
-                                    <img src="<?php the_sub_field('illustration_membre'); ?>">
-                                    <h4><?php the_sub_field('nom_prenom_membre'); ?></h4>
-                                    <?php the_sub_field('contenu_membre'); ?>
+                                    <img src="<?php the_sub_field('illustration_projet'); ?>">
+                                    <h4><?php the_sub_field('titre_projet'); ?></h4>
+                                    <?php the_sub_field('contenu_projet'); ?>
                                     <?php
                                 endwhile;
                                 ?>
