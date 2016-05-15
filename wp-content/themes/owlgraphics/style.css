@@ -214,6 +214,44 @@ section#agence .container #membres ul li p {
     color: #fff;
     line-height: 25px;
 }
+
+/******************************************************************************/
+/******************************* PROJETS **************************************/
+/******************************************************************************/
+
+section#projets .container {
+    text-align: center;
+    padding: 50px;
+}
+
+section#projets .container h1, section#projets .container h2 {
+    text-transform: uppercase;
+    color: #3c3839;
+}
+
+section#projets .container #nos_projets ul {
+    padding-top: 100px;
+}
+
+section#projets .container #nos_projets ul li {
+    border: solid 2px #282828;
+    display: inline-block;
+    width: 30%;
+    margin: 0 15px;
+    padding: 75px 0;
+    color: #3c3839;
+}
+
+section#projets .container #nos_projets ul li h4 {
+    padding: 45px 0;
+    text-transform: uppercase;
+}
+
+section#projets .container #nos_projets ul li p {
+    font-size: 16px;
+    color: #3c3839;
+}
+
 /******************************************************************************/
 /******************************* FOOTER **************************************/
 /******************************************************************************/
