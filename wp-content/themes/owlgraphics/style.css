@@ -247,6 +247,7 @@ section#projets .container #nos_projets ul li h4 {
     text-transform: uppercase;
 }
 section#projets .container #nos_projets ul li h4::after {
+    content: '';
     position: absolute;
     width: 50px;
     height: 1px;
