@@ -101,7 +101,8 @@ ul li {
 /******************************************************************************/
 header {
     background: url('img/fondHeader.png');
-    height: 1070px;
+    height: 1045px;
+    padding-top: 25px;
 }
 
 #logoOwl {
