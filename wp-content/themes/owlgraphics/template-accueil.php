@@ -116,8 +116,6 @@ get_header(); ?>
                                 position: myLatlng,
                                 draggable: false
                             });
-                            // animation du marqueur
-                            marker.addListener('click', toggleBounce);
                             // apparence de la map
                             map.set('styles', [
                                 {
