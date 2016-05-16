@@ -252,13 +252,14 @@ section#projets .container #nos_projets ul li h4::after {
     width: 50px;
     height: 1px;
     background: #3c3839;
-    top:10px;
+    bottom:25px;
     left:0;
 }
 
 section#projets .container #nos_projets ul li p {
     font-size: 16px;
     color: #3c3839;
+    max-width: 90%;
 }
 
 /******************************************************************************/
