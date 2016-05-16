@@ -87,6 +87,7 @@ get_header(); ?>
             </section>
             <section id="contact">
                 <div class="container">
+                    <?php the_field('titre_contact'); ?>
                     <?php echo do_shortcode("[contact-form-7 id=\"17\" title=\"Formulaire de contact\"]"); ?>
                     <div id="map"></div>
                     <script>

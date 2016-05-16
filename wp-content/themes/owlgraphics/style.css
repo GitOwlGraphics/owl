@@ -286,6 +286,62 @@ section#contact {
     background-repeat: no-repeat;
     background-size: 100%;
 }
+section#contact h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+}
+section#contact .container {
+    padding: 50px 0;
+}
+section#contact #wpcf7-f17-p4-o1 {
+    float: left;
+}
+section#contact #map {
+    float: right;
+}
+section#contact #wpcf7-f17-p4-o1 input::-webkit-input-placeholder, section#contact #wpcf7-f17-p4-o1 textarea::-webkit-input-placeholder {
+    color: #fff;
+}
+section#contact #wpcf7-f17-p4-o1 input {
+    padding-left: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    background: transparent;
+    width: 230px;
+    height: 40px;
+    margin:10px 0;
+    border: solid 2px  #fff;
+}
+section#contact #wpcf7-f17-p4-o1 textarea {
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    width: 500px;
+    border: solid 2px  #fff;
+    background: transparent;
+    box-sizing: border-box;
+}
+section#contact #wpcf7-f17-p4-o1 select {
+    font-size: 16px;
+    color: #fff;
+    padding:0;
+    border: solid 2px  #fff;
+    background: transparent;
+    width: 500px;
+    height: 40px;
+    margin:10px 0;
+}
+section#contact #wpcf7-f17-p4-o1 select option {
+    background: grey;
+    height: 40px;
+    margin:10px 0;
+    font-size: 16px;
+    color: #fff;
+}
+
 /******************************************************************************/
 /******************************* FOOTER **************************************/
 /******************************************************************************/
