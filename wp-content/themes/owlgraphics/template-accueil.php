@@ -72,7 +72,7 @@ get_header(); ?>
                                     <div class="un_projet">
                                     <h4><?php the_sub_field('titre_projet'); ?></h4>
                                     <?php the_sub_field('contenu_projet'); ?>
-                                    <a href="<?php the_sub_field('lien_projet');?>" class="plus">Plus</a>
+                                    <a href="<?php the_sub_field('lien_projet'); ?>" class="plus">Plus</a>
                                     <?php
                                 endwhile;
                                 ?>
@@ -89,24 +89,53 @@ get_header(); ?>
                 <div class="container">
                     <?php echo do_shortcode("[contact-form-7 id=\"17\" title=\"Formulaire de contact\"]"); ?>
                     <div id="map"></div>
-                    <script type="text/javascript">
-                        google.maps.event.addDomListener(window, 'load', init);
-                        var myLatlng = new google.maps.LatLng(48.84817719999999, 2.3411866000000146);
-                        function init() {
-                            var mapOptions = {
-                                zoom: 15,
-                                center: myLatlng,
-                                styles: [{"featureType":"administrative","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"all","stylers":[{"visibility":"simplified"},{"hue":"#0066ff"},{"saturation":74},{"lightness":100}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"off"},{"weight":0.6},{"saturation":-85},{"lightness":61}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"visibility":"on"}]},{"featureType":"road.arterial","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road.local","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"water","elementType":"all","stylers":[{"visibility":"simplified"},{"color":"#5f94ff"},{"lightness":26},{"gamma":5.86}]}]
-                            };
-                            var mapElement = document.getElementById('map');
-                            var map = new google.maps.Map(mapElement, mapOptions);
-                            var marker = new google.maps.Marker({
-                                position: myLatlng,
-                                map: map
+                    <script>
+                        function initMap() {
+                            var mapDiv = document.getElementById('map'); // on identifie la div map
+                            var map = new google.maps.Map(mapDiv, { // initialisation de l'objet
+                                center: {lat: 43.60460399999999, lng: 1.4476379999999835},
+                                zoom: 17, // zoom correct : 17
+                                scrollwheel: false,
+                                disableDefaultUI: true, // enleve l'UI standart
+                                navigationControl: false, // empeche le delire des fleches
+                                mapTypeControl: false,
+                                scaleControl: false, // empeche de scroll
+                                draggable: false, // empeche de bouger
+                                mapTypeId: google.maps.MapTypeId.ROADMAP
                             });
+
+                            map.set('styles', [
+                                {
+                                    featureType: 'poi',
+                                    elementType: 'geometry',
+                                    stylers: [
+                                        {visibility: 'off'}
+                                    ]
+                                }, {
+                                    featureType: 'landscape',
+                                    elementType: 'geometry',
+                                    stylers: [
+                                        { hue: '#00FBB5' },
+                                        { gamma: 0 },
+                                        { saturation: 0 },
+                                        { lightness: 20 }
+                                    ]
+                                },{
+                                    featureType: 'poi.school',
+                                    elementType: 'geometry',
+                                    stylers: [
+                                        {visibility: 'on'},
+                                        {hue: '#fff700'},
+                                        {lightness: -15},
+                                        {saturation: 0}
+                                    ]
+                                }
+                            ]);
                         }
+
                     </script>
-                    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=&#9;&#10;AIzaSyBC-8UDSRxFvrfrK_lPv3Gx2wLMCwLdw5Q&amp;sensor=false"></script>
+                    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+                            async defer></script>
                 </div>
             </section>
         </div><!-- .entry-content-page -->
