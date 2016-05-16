@@ -232,15 +232,22 @@ section#projets .container h1, section#projets .container h2 {
 
 section#projets .container #nos_projets ul {
     padding-top: 100px;
+    text-align: initial;
 }
 
 section#projets .container #nos_projets ul li {
     display: inline-block;
-    width: 50%;
+    width: 570px;
     color: #3c3839;
     text-align: initial;
+    padding:  0 5px;
+    vertical-align: top;
+    min-height: 600px;
+    margin-bottom: 15px;
 }
-
+section#projets .container #nos_projets ul li .un_projet {
+    padding:0 40px;
+}
 section#projets .container #nos_projets ul li h4 {
     position: relative;
     padding: 45px 0;
@@ -259,9 +266,17 @@ section#projets .container #nos_projets ul li h4::after {
 section#projets .container #nos_projets ul li p {
     font-size: 16px;
     color: #3c3839;
-    max-width: 90%;
+    margin-bottom: 20px;
+    min-height: 80px;
+    vertical-align: top;
 }
-
+section#projets .container #nos_projets ul li a.plus {
+    color: #3c3839;
+    border:solid 1px #3c3839;
+    padding: 5px 17px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
 /******************************************************************************/
 /******************************* FOOTER **************************************/
 /******************************************************************************/

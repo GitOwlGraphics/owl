@@ -69,12 +69,14 @@ get_header(); ?>
                                     ?>
                                     <li>
                                     <img src="<?php the_sub_field('illustration_projet'); ?>">
+                                    <div class="un_projet">
                                     <h4><?php the_sub_field('titre_projet'); ?></h4>
                                     <?php the_sub_field('contenu_projet'); ?>
                                     <a href="<?php the_sub_field('lien_projet');?>" class="plus">Plus</a>
                                     <?php
                                 endwhile;
                                 ?>
+                                </div>
                                 </li>
                                 <?php
                             endif;
