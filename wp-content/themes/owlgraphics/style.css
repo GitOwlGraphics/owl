@@ -235,17 +235,23 @@ section#projets .container #nos_projets ul {
 }
 
 section#projets .container #nos_projets ul li {
-    border: solid 2px #282828;
     display: inline-block;
-    width: 30%;
-    margin: 0 15px;
-    padding: 75px 0;
+    width: 50%;
     color: #3c3839;
+    text-align: initial;
 }
 
 section#projets .container #nos_projets ul li h4 {
+    position: relative;
     padding: 45px 0;
     text-transform: uppercase;
+}
+section#projets .container #nos_projets ul li h4::after {
+    width: 50px;
+    height: 1px;
+    background: #3c3839;
+    top:10px;
+    left:0;
 }
 
 section#projets .container #nos_projets ul li p {
