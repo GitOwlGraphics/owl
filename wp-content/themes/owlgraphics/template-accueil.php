@@ -91,19 +91,34 @@ get_header(); ?>
                     <div id="map"></div>
                     <script>
                         function initMap() {
+
+                            // coordonnées de l'emplacement
+                            var myLatlng = new google.maps.LatLng(43.60460399999999,1.4476379999999835);
+                            // emplacement de la map
                             var mapDiv = document.getElementById('map'); // on identifie la div map
+                            // appel de la map
                             var map = new google.maps.Map(mapDiv, { // initialisation de l'objet
-                                center: {lat: 43.60460399999999, lng: 1.4476379999999835},
+                                center: myLatlng,
                                 zoom: 17, // zoom correct : 17
                                 scrollwheel: false,
                                 disableDefaultUI: true, // enleve l'UI standart
                                 navigationControl: false, // empeche le delire des fleches
                                 mapTypeControl: false,
                                 scaleControl: false, // empeche de scroll
-                                draggable: false, // empeche de bouger
+                                draggable: true, // mouvement de la map
                                 mapTypeId: google.maps.MapTypeId.ROADMAP
                             });
-
+                            // marqueur
+                            marker = new google.maps.Marker({
+                                map: map,
+                                draggable: true,
+                                animation: google.maps.Animation.DROP,
+                                position: myLatlng,
+                                draggable: false
+                            });
+                            // animation du marqueur
+                            marker.addListener('click', toggleBounce);
+                            // apparence de la map
                             map.set('styles', [
                                 {
                                     featureType: 'poi',
@@ -132,7 +147,6 @@ get_header(); ?>
                                 }
                             ]);
                         }
-
                     </script>
                     <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
                             async defer></script>
