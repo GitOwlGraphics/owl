@@ -272,7 +272,6 @@ section#projets .container #nos_projets ul li p {
 }
 section#projets .container #nos_projets ul li a.plus {
     color: #3c3839;
-
     border:solid 1px #3c3839;
     padding: 5px 17px;
     text-transform: uppercase;
@@ -286,6 +285,11 @@ section#projets .container #nos_projets ul li a.plus:hover  {
     padding: 5px 17px;
     text-transform: uppercase;
     font-size: 16px;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -o-transition: .5s ease;
+    -ms-transition: .5s ease;
+    transition: .5s ease;
 }
 /******************************************************************************/
 /******************************* CONTACT ************************************/
@@ -400,5 +404,5 @@ footer .site-info ul a.no-link::after {
 
 #map {
     width: 500px;
-    height: 400px;
+    height: 393px;
 }
