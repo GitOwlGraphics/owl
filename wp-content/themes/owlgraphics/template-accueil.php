@@ -72,7 +72,7 @@ get_header(); ?>
                                     <div class="un_projet">
                                     <h4><?php the_sub_field('titre_projet'); ?></h4>
                                     <?php the_sub_field('contenu_projet'); ?>
-                                    <a href="<?php the_sub_field('lien_projet'); ?>" class="plus">Plus</a>
+                                    <a href="<?php the_sub_field('lien_projet'); ?>" class="plus">+</a>
                                     <?php
                                 endwhile;
                                 ?>

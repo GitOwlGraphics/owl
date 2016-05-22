@@ -118,16 +118,44 @@ header {
 }
 
 #site-navigation .menu-menu-principal-container ul li {
-    padding: 0 20px;
-    display: inline;
+    padding: 0 0 10px 0;
+    margin: 0 20px;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    overflow: hidden;
 }
-
+#site-navigation .menu-menu-principal-container ul li:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background: #fff;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+#site-navigation .menu-menu-principal-container ul li:hover:before, #site-navigation .menu-menu-principal-container ul li:focus:before, #site-navigation .menu-menu-principal-container ul li:active:before {
+    left: 0;
+    right: 0;
+}
 #site-navigation .menu-menu-principal-container ul li a {
     text-transform: uppercase;
     font-size: 16px;
     font-weight: bold;
 }
-
 #entete {
     position: absolute;
     top: 350px;
@@ -272,24 +300,51 @@ section#projets .container #nos_projets ul li p {
 }
 section#projets .container #nos_projets ul li a.plus {
     color: #3c3839;
-    border:solid 1px #3c3839;
-    padding: 5px 17px;
-    text-transform: uppercase;
+    border: solid 1px #3c3839;
+    padding: 7px 11px;
+    font-weight: bold;
     font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
 }
-
-section#projets .container #nos_projets ul li a.plus:hover  {
-    color: #fafdff;
-    background-color: #3c3839;
-    border:solid 1px #3c3839;
-    padding: 5px 17px;
-    text-transform: uppercase;
-    font-size: 16px;
-    -webkit-transition: .5s ease;
-    -moz-transition: .5s ease;
-    -o-transition: .5s ease;
-    -ms-transition: .5s ease;
-    transition: .5s ease;
+#projets .container #nos_projets ul li a.plus:before {
+    content: "Lire";
+    padding: 8px 37px 7px 25px;
+    position: absolute;
+    z-index: -1;
+    top: -1px;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    background: #282828;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+section#projets .container #nos_projets ul li a.plus:hover, section#projets .container #nos_projets ul li a.plus:focus, section#projets .container #nos_projets ul li a.plus:active {
+    color: white;
+}
+section#projets .container #nos_projets ul li a.plus:hover:before, section#projets .container #nos_projets ul li a.plus:focus:before, section#projets .container #nos_projets ul li a.plus:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
 }
 /******************************************************************************/
 /******************************* CONTACT ************************************/
@@ -401,7 +456,6 @@ footer .site-info ul a.no-link::after {
     top:5px;
     right:0px;
 }
-
 #map {
     width: 500px;
     height: 393px;
