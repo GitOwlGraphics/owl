@@ -11,17 +11,19 @@
 
 ?>
 
-	</div><!-- #content -->
+</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<ul>
-				<li>Mentions légales<li>
-				<li><a href="<?php bloginfo('home');?>"><img src="<?php bloginfo('template_url');?>/img/owl.png"></a><li>
-				<li>® owlGraphics - 2016<li>
-			</ul>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+<footer id="colophon" class="site-footer" role="contentinfo">
+    <div class="container">
+        <div class="site-info">
+            <ul>
+                <li><a href="#">Mentions légales</a></li>
+                <a class="no-link" href="<?php bloginfo('home'); ?>"><img src="<?php bloginfo('template_url'); ?>/img/owl.png"></a>
+                <li>® owlGraphics - 2016</li>
+            </ul>
+        </div><!-- .site-info -->
+    </div>
+</footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

@@ -292,9 +292,8 @@ section#projets .container #nos_projets ul li a.plus:hover  {
 /******************************************************************************/
 section#contact {
     background: url('img/fondContact.jpg');
-    height: 800px;
+    height: 799px;
     background-repeat: no-repeat;
-    background-size: 100%;
 }
 section#contact h1 {
     text-align: center;
@@ -319,7 +318,7 @@ section#contact #wpcf7-f17-p4-o1 input {
     font-size: 16px;
     color: #fff;
     background: transparent;
-    width: 230px;
+    width: 239px;
     height: 40px;
     margin:10px 0;
     border: solid 2px  #fff;
@@ -345,18 +344,21 @@ section#contact #wpcf7-f17-p4-o1 select {
     margin:10px 0;
 }
 section#contact #wpcf7-f17-p4-o1 select option {
-    background: grey;
-    height: 40px;
+    cursor: pointer;
+    background: #282828;
     margin:10px 0;
     font-size: 16px;
     color: #fff;
 }
-
 /******************************************************************************/
 /******************************* FOOTER **************************************/
 /******************************************************************************/
 footer {
-    color: #3c3839;
+    padding-top: 20px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    background: #282828;
 }
 footer .site-info {
 
@@ -365,7 +367,35 @@ footer .site-info ul {
 /* un commentaire la */
 }
 footer .site-info ul li {
+    padding: 0 15px;
+    position: relative;
     display: inline-block;
+}
+footer .site-info ul a.no-link {
+    position: relative;
+    padding:0 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+footer .site-info ul a.no-link::before {
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 1px;
+    background: #fff;
+    display: inline-block;
+    top:5px;
+    left:0px;
+}
+footer .site-info ul a.no-link::after {
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 1px;
+    background: #fff;
+    display: inline-block;
+    top:5px;
+    right:0px;
 }
 
 #map {
