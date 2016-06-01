@@ -350,7 +350,7 @@ section#projets .container #nos_projets ul li a.plus:hover:before, section#proje
 /******************************* CONTACT ************************************/
 /******************************************************************************/
 section#contact {
-    background: url('img/fondContact.jpg');
+    background-color: #282828;/* background: url('img/fondContact.jpg'); */
     height: 799px;
     background-repeat: no-repeat;
 }
@@ -460,3 +460,4 @@ footer .site-info ul a.no-link::after {
     width: 500px;
     height: 393px;
 }
+/* Test commit */
