@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="FTP - Owl" uploadOnCheckin="96db234e-4495-4238-843f-7de257e689e5">
+  <component name="PublishConfigData" serverName="Owl">
     <serverData>
       <paths name="FTP - Owl">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="owlGraphics">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
+      <paths name="Owl">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/www" local="$PROJECT_DIR$" web="=" />
+          </mappings>
+        </serverdata>
+      </paths>
     </serverData>
-    <option name="myUploadOnCheckinName" value="FTP - Owl" />
   </component>
 </project>

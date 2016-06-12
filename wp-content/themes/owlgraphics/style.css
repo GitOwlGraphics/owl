@@ -350,7 +350,7 @@ section#projets .container #nos_projets ul li a.plus:hover:before, section#proje
 /******************************* CONTACT ************************************/
 /******************************************************************************/
 section#contact {
-    background-color: #282828;/* background: url('img/fondContact.jpg'); */
+    background: url('img/fondContact.jpg');
     height: 799px;
     background-repeat: no-repeat;
 }
@@ -409,6 +409,20 @@ section#contact #wpcf7-f17-p4-o1 select option {
     font-size: 16px;
     color: #fff;
 }
+section#contact #wpcf7-f17-p4-o1 .wpcf7-submit {
+    cursor: pointer;
+}
+section#contact #wpcf7-f17-p4-o1 .wpcf7-submit:hover {
+    transition-duration: 0.5s;
+    background: #fff;
+    color: #282828;
+    font-weight: bold;
+}
+#map {
+    width: 500px;
+    height: 393px;
+}
+
 /******************************************************************************/
 /******************************* FOOTER **************************************/
 /******************************************************************************/
@@ -423,7 +437,6 @@ footer .site-info {
 
 }
 footer .site-info ul {
-/* un commentaire la */
 }
 footer .site-info ul li {
     padding: 0 15px;
@@ -456,8 +469,3 @@ footer .site-info ul a.no-link::after {
     top:5px;
     right:0px;
 }
-#map {
-    width: 500px;
-    height: 393px;
-}
-/* Test commit */
